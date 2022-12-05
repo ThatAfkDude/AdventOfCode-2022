@@ -1,7 +1,5 @@
 ﻿using AdventOfCode.Import;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AdventOfCode.Solutions.Day04
 {
