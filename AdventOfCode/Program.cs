@@ -4,6 +4,7 @@ using AdventOfCode.Solutions.Day02;
 using AdventOfCode.Solutions.Day03;
 using AdventOfCode.Solutions.Day04;
 using AdventOfCode.Solutions.Day05;
+using AdventOfCode.Solutions.Day06;
 using System;
 using System.Collections.Generic;
 
@@ -23,6 +24,7 @@ namespace AdventOfCode
             solvers.Add(new Day3());
             solvers.Add(new Day4());
             solvers.Add(new Day5());
+            solvers.Add(new Day6());
 
 
             if (solveAll)
