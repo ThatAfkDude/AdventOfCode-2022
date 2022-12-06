@@ -15,7 +15,7 @@ namespace AdventOfCode
         static void Main(string[] args)
         {
             var day = -1;
-            var solveAll = false;
+            var solveAll = true;
 
 
             var solvers = new List<ISolver>();
