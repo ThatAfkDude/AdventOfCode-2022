@@ -5,6 +5,7 @@ using AdventOfCode.Solutions.Day03;
 using AdventOfCode.Solutions.Day04;
 using AdventOfCode.Solutions.Day05;
 using AdventOfCode.Solutions.Day06;
+using AdventOfCode.Solutions.Day07;
 using System;
 using System.Collections.Generic;
 
@@ -15,16 +16,19 @@ namespace AdventOfCode
         static void Main(string[] args)
         {
             var day = -1;
-            var solveAll = true;
+            var solveAll = false;
 
 
-            var solvers = new List<ISolver>();
-            solvers.Add(new Day1());
-            solvers.Add(new Day2());
-            solvers.Add(new Day3());
-            solvers.Add(new Day4());
-            solvers.Add(new Day5());
-            solvers.Add(new Day6());
+            var solvers = new List<ISolver>
+            {
+                new Day1(),
+                new Day2(),
+                new Day3(),
+                new Day4(),
+                new Day5(),
+                new Day6(),
+                new Day7()
+            };
 
 
             if (solveAll)
