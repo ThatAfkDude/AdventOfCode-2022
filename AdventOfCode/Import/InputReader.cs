@@ -70,7 +70,14 @@ namespace AdventOfCode.Import
             foreach (string line in lines)
             {
                 var entry = line.Split(new char[] { ' ' });
-                list.Add((entry[0], int.Parse(entry[1])));
+                if(entry.Length == 2)
+                {
+                    list.Add((entry[0], int.Parse(entry[1])));
+                }
+                else
+                {
+                    list.Add((entry[0], 0));
+                } 
             }
             return list;
         }

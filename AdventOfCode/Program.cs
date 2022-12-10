@@ -6,6 +6,9 @@ using AdventOfCode.Solutions.Day04;
 using AdventOfCode.Solutions.Day05;
 using AdventOfCode.Solutions.Day06;
 using AdventOfCode.Solutions.Day07;
+using AdventOfCode.Solutions.Day08;
+using AdventOfCode.Solutions.Day09;
+using AdventOfCode.Solutions.Day10;
 using System;
 using System.Collections.Generic;
 
@@ -27,7 +30,10 @@ namespace AdventOfCode
                 new Day4(),
                 new Day5(),
                 new Day6(),
-                new Day7()
+                new Day7(),
+                new Day8(),
+                new Day9(),
+                new Day10()
             };
 
 
