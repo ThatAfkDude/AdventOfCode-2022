@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode.Solutions.Day09
 {
@@ -121,7 +119,6 @@ namespace AdventOfCode.Solutions.Day09
             {
                 head.Y--;
             }
-
             return head;
         }
     }

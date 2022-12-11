@@ -1,7 +1,5 @@
 ﻿using AdventOfCode.Import;
 using System;
-using System.Diagnostics.Metrics;
-
 
 namespace AdventOfCode.Solutions.Day08
 {

@@ -10,10 +10,9 @@ namespace AdventOfCode.Import
         public static List<List<double>> ReadListOfIntListSeperatedByEmptyLine(string path)
         {
             var bigList = new List<List<double>>();
-            
-            string[] lines = System.IO.File.ReadAllLines(path);
-
             var list = new List<double>();
+
+            string[] lines = System.IO.File.ReadAllLines(path);
 
             foreach (string line in lines)
             {
@@ -26,7 +25,6 @@ namespace AdventOfCode.Import
                 {
                     list.Add(double.Parse(line));
                 }
-                
             }
             bigList.Add(list);
             return bigList;
@@ -40,7 +38,6 @@ namespace AdventOfCode.Import
             string[] lines = System.IO.File.ReadAllLines(path);
 
             var numbers = lines.FirstOrDefault(x => x.StartsWith(" 1"));
-
             var stackNumber = int.Parse(numbers.Trim().Split(" ").LastOrDefault());
 
             for(var i = 0; i < stackNumber; i++)

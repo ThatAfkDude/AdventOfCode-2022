@@ -19,7 +19,6 @@ namespace AdventOfCode.Solutions.Day04
                     count++;
                 }
             }
-
             Console.WriteLine(count);
         }
 
@@ -38,7 +37,6 @@ namespace AdventOfCode.Solutions.Day04
                     count++;
                 }
             }
-
             Console.WriteLine(count);
         } 
         

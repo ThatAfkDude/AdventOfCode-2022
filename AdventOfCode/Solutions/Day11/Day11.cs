@@ -1,11 +1,8 @@
 ﻿using AdventOfCode.Import;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdventOfCode.Solutions.Day11
 {
@@ -34,7 +31,6 @@ namespace AdventOfCode.Solutions.Day11
                 inspectCounter *= monkey.InspectCounter;
             }
             Console.WriteLine(inspectCounter.ToString());
-          
         }
 
         public void Solve2()
@@ -70,14 +66,11 @@ namespace AdventOfCode.Solutions.Day11
     public class Monkey
     {
         private Queue<BigInteger> queue = new Queue<BigInteger>();
-
         public int TrueMonkeyIndex { get; set; }
         public int FalseMonkeyIndex { get; set; }
         public int Divisor { get; set; }
-
         public int Factor { get; set; }
         public char Operation { get; set; }
-
         public int InspectCounter { get; set; }
 
         public void AddItem(BigInteger item)
@@ -117,8 +110,6 @@ namespace AdventOfCode.Solutions.Day11
                 {
                     item = item % bigDivisor;
                 }
-
-                
 
                 if (item % Divisor == 0)
                 {

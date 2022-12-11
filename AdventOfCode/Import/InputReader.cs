@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 
-
 namespace AdventOfCode.Import
 {
     public static class InputReader
