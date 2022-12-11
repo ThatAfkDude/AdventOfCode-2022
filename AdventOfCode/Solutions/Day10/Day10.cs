@@ -13,7 +13,6 @@ namespace AdventOfCode.Solutions.Day10
         public void Solve()
         {
             var input = InputReader.ReadStringIntTuple(@"Inputs\Day10.txt");
-
             var cycle = 0;
             var register = 1;
             var res = new List<int>();
@@ -46,10 +45,8 @@ namespace AdventOfCode.Solutions.Day10
         public void Solve2()
         {
             var input = InputReader.ReadStringIntTuple(@"Inputs\Day10.txt");
-
             var cycle = 0;
             var register = 1;
-            var res = new List<int>();
             var image = new List<string>() { "", "", "", "", "", "" };
             var row = 0;
 
@@ -76,9 +73,7 @@ namespace AdventOfCode.Solutions.Day10
                     {
                         image[row] += ".";
                     }
-
                     cycle++;
-
 
                     if ((cycle) % 40 == 0)
                     {
@@ -93,19 +88,14 @@ namespace AdventOfCode.Solutions.Day10
                 Console.WriteLine(line);
             }
             Console.WriteLine();
-
         }
     }
 
     internal class Execution
     {
         internal int Timer { get; set; }
-        internal int Value { get; set; }
-        
+        internal int Value { get; set; }  
     }
-
-
-
 
     /*
      initial attempt
@@ -125,7 +115,6 @@ namespace AdventOfCode.Solutions.Day10
                 {
                     executionList.Add(new Execution() { Value = input[cycle].Item2, Timer = 2 });
                 }
-
 
                 //execution
                 for (var i = 0; i < executionList.Count(); i++)
