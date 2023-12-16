@@ -129,5 +129,25 @@ namespace AdventOfCode.Import
             return array;
         }
 
+        public static char[,] Read2DCharArray(string path)
+        {
+            string[] lines = System.IO.File.ReadAllLines(path);
+
+            var y = lines.Length;
+            var x = lines[0].Length;
+
+            var array = new char[y, x];
+
+            for (int i = 0; i < y; i++)
+            {
+                for (int j = 0; j < x; j++)
+                {
+                    array[i, j] = lines[i][j];
+
+                }
+            }
+            return array;
+        }
+
     }
 }
