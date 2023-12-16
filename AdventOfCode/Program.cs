@@ -1,16 +1,4 @@
-﻿
-using AdventOfCode.Solutions.Day01;
-using AdventOfCode.Solutions.Day02;
-using AdventOfCode.Solutions.Day03;
-using AdventOfCode.Solutions.Day04;
-using AdventOfCode.Solutions.Day05;
-using AdventOfCode.Solutions.Day06;
-using AdventOfCode.Solutions.Day07;
-using AdventOfCode.Solutions.Day08;
-using AdventOfCode.Solutions.Day09;
-using AdventOfCode.Solutions.Day10;
-using AdventOfCode.Solutions.Day11;
-using AdventOfCode.Solutions.Day12;
+﻿using AdventOfCode._2023.Solutions;
 using System;
 using System.Collections.Generic;
 
@@ -26,18 +14,11 @@ namespace AdventOfCode
 
             var solvers = new List<ISolver>
             {
-                new Day1(),
-                new Day2(),
-                new Day3(),
-                new Day4(),
-                new Day5(),
-                new Day6(),
-                new Day7(),
-                new Day8(),
-                new Day9(),
-                new Day10(),
-                new Day11(),
-                new Day12()
+                new Day01(),
+                new Day02(),
+                new Day03(),
+                new Day04(),
+
             };
 
 
